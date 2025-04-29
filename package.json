@@ -2,6 +2,7 @@
   "name": "comet-chat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vaibhavahbiav.github.io/comet-chat",
   "dependencies": {
     "@cometchat/calls-sdk-javascript": "^4.1.0",
     "@cometchat/chat-uikit-react": "^6.0.5",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^7.2.4"
+    "ajv": "^7.2.4",
+    "gh-pages": "^6.3.0"
   }
 }
