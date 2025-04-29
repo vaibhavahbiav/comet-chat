@@ -51,24 +51,24 @@
   
  /* Default (Light) Theme */
 .cometchat {
-    --cometchat-primary-color: #f76808;
+    --cometchat-primary-color: #fafd40;
     --cometchat-neutral-color-300: #fff;
     --cometchat-background-color-03: #feede1;
-    --cometchat-extended-primary-color-500: #fbaa75;
-    --cometchat-icon-color-highlight: #f76808;
-    --cometchat-text-color-highlight: #f76808;
+    --cometchat-extended-primary-color-500: #fdff87;
+    --cometchat-icon-color-highlight: #fafd40;
+    --cometchat-text-color-highlight: #fafd40;
   }
   
   /* Dark Theme */
   @media (prefers-color-scheme: dark) {
     .cometchat {
-      --cometchat-primary-color: #f76808;
-      --cometchat-neutral-color-300: #311502;
-      --cometchat-background-color-03: #451d02;
-      --cometchat-extended-primary-color-500: #943e05;
-      --cometchat-icon-color-highlight: #f76808;
-      --cometchat-text-color-highlight: #f76808;
-      --cometchat-message-seen-color: #f76808;
+      --cometchat-primary-color: #f11d5d;
+      --cometchat-neutral-color-300: #2e0b15;
+      --cometchat-background-color-03: #530019;
+      --cometchat-extended-primary-color-500: #7c0328;
+      --cometchat-icon-color-highlight: #f11d5d;
+      --cometchat-text-color-highlight: #f11d5d;
+      --cometchat-message-seen-color: #f11d5d;
       --cometchat-neutral-color-50: #1a1a1a;
     }
   }

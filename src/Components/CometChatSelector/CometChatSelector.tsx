@@ -27,7 +27,7 @@ export const CometChatSelector = (props: SelectorProps) => {
     return (
         <>
             {loggedInUser && <>
-                {activeTab == "chats" ? (
+                {activeTab === "chats" ? (
                     <CometChatConversations
                         activeConversation={activeItem instanceof CometChat.Conversation ? activeItem : undefined}
                         onItemClick={(e) => {
@@ -35,7 +35,7 @@ export const CometChatSelector = (props: SelectorProps) => {
                             onSelectorItemClicked(e, "updateSelectedItem");
                         }}
                     />
-                ) : activeTab == "calls" ? (
+                ) : activeTab === "calls" ? (
                     <CometChatCallLogs
                         activeCall={activeItem instanceof CometChat.Call ? activeItem : undefined}
                         onItemClick={(e: Call) => {
@@ -43,7 +43,7 @@ export const CometChatSelector = (props: SelectorProps) => {
                             onSelectorItemClicked(e, "updateSelectedItemCall");
                         }}
                     />
-                ) : activeTab == "users" ? (
+                ) : activeTab === "users" ? (
                     <CometChatUsers
                         activeUser={activeItem instanceof CometChat.User ? activeItem : undefined}
                         onItemClick={(e) => {
@@ -51,7 +51,7 @@ export const CometChatSelector = (props: SelectorProps) => {
                             onSelectorItemClicked(e, "updateSelectedItemUser");
                         }}
                     />
-                ) : activeTab == "groups" ? (
+                ) : activeTab === "groups" ? (
                     <CometChatGroups
                         activeGroup={activeItem instanceof CometChat.Group ? activeItem : undefined}
                         onItemClick={(e) => {
