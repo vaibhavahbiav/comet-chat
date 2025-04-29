@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
+@import url("@cometchat/chat-uikit-react/css-variables.css");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#root {
+    text-align: center;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #282c34;
+    overflow: hidden;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .conversations-with-messages {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .conversations-wrapper {
+    height: 100vh;
+    width: 480px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
-}
+  
+  .conversations-wrapper>.cometchat {
+    overflow: hidden;
+  }
+  
+  .messages-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .empty-conversation {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cometchat-background-color-03, #F5F5F5);
+    color: var(--cometchat-text-color-secondary, #727272);
+    font: var(--cometchat-font-body-regular, 400 14px Roboto);
+  }
+  
+  .cometchat .cometchat-message-composer {
+    border-radius: 0px;
+  }
+  
+ /* Default (Light) Theme */
+.cometchat {
+    --cometchat-primary-color: #f76808;
+    --cometchat-neutral-color-300: #fff;
+    --cometchat-background-color-03: #feede1;
+    --cometchat-extended-primary-color-500: #fbaa75;
+    --cometchat-icon-color-highlight: #f76808;
+    --cometchat-text-color-highlight: #f76808;
+  }
+  
+  /* Dark Theme */
+  @media (prefers-color-scheme: dark) {
+    .cometchat {
+      --cometchat-primary-color: #f76808;
+      --cometchat-neutral-color-300: #311502;
+      --cometchat-background-color-03: #451d02;
+      --cometchat-extended-primary-color-500: #943e05;
+      --cometchat-icon-color-highlight: #f76808;
+      --cometchat-text-color-highlight: #f76808;
+      --cometchat-message-seen-color: #f76808;
+      --cometchat-neutral-color-50: #1a1a1a;
+    }
+  }
+  
